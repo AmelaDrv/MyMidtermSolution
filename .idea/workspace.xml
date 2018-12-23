@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31b5026c-d3cc-4ba3-9ce7-c43334c5b859" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/mongoSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CodingExamNovember2018.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CodingExamNovember2018.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamNovember2018/algorithm/Numbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamNovember2018/algorithm/Numbers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamNovember2018/algorithm/Sort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamNovember2018/algorithm/Sort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamNovember2018/definition/core-java-conceptual-questions" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamNovember2018/definition/core-java-conceptual-questions" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CodingExamNovember2018/secret.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CodingExamNovember2018/secret.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/Numbers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/Sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/Sort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithm/UnitTestSorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/UnitTestSorting.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,14 +32,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/algorithm/Numbers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+            <state relative-caret-position="133">
+              <caret line="51" column="23" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/algorithm/UnitTestSorting.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -105,15 +107,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/datastructure/DataReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -140,13 +133,14 @@
         <option value="$PROJECT_DIR$/src/definition/core-java-conceptual-questions" />
         <option value="$PROJECT_DIR$/src/algorithm/Sort.java" />
         <option value="$PROJECT_DIR$/src/algorithm/Numbers.java" />
+        <option value="$PROJECT_DIR$/src/algorithm/UnitTestSorting.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="67" />
+    <option name="x" value="585" />
     <option name="y" value="23" />
-    <option name="width" value="1343" />
+    <option name="width" value="825" />
     <option name="height" value="816" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -221,7 +215,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545594618870" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545596590433" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -245,7 +239,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Numbers">
+  <component name="RunManager" selected="Application.UnitTestSorting">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -308,13 +302,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Reader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="json.parser.Reader" />
+    <configuration name="UnitTestSorting" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="algorithm.UnitTestSorting" />
       <module name="CodingExamNovember2018" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="json.parser.*" />
+          <option name="PATTERN" value="algorithm.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -352,19 +346,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Reader" />
       <item itemvalue="Application.JsonReaderHelper" />
       <item itemvalue="Application.JsonReaderUtil" />
       <item itemvalue="Application.CsvReader" />
       <item itemvalue="Application.Numbers" />
+      <item itemvalue="Application.UnitTestSorting" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.UnitTestSorting" />
         <item itemvalue="Application.Numbers" />
         <item itemvalue="Application.CsvReader" />
         <item itemvalue="Application.JsonReaderHelper" />
         <item itemvalue="Application.JsonReaderUtil" />
-        <item itemvalue="Application.Reader" />
       </list>
     </recent_temporary>
   </component>
@@ -382,10 +376,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="23" width="1343" height="816" extended-state="0" />
-    <editor active="true" />
+    <frame x="585" y="23" width="825" height="816" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23059185" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22988506" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -404,7 +397,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" order="10" />
       <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Mongo Explorer" visible="true" weight="0.01537279" />
+      <window_info anchor="right" id="Mongo Explorer" visible="true" weight="0.025542784" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -446,13 +439,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/algorithm/UnitTestSorting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -674,11 +660,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithm/Numbers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="133">
+          <caret line="51" column="23" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithm/UnitTestSorting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
