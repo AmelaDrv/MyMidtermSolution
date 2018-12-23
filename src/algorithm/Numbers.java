@@ -17,12 +17,13 @@ public class Numbers {
 	 * Use any databases[MongoDB, Oracle or MySql] to store data and retrieve data.
 	 *
 	 * At the end. After running all the sorting algo, come to a conclusion which one is suitable on given data set.
+	 * ANSWER : Quick sort is the better sorting algorithm for a large list.
 	 *
 	 */
 
 	public static void main(String[] args) throws Exception {
-		
-		int [] num = new int[1000000];
+
+		int[] num = new int[1000000];
 		storeRandomNumbers(num);
 		ConnectToSqlDB connectToSqlDB = new ConnectToSqlDB();
 		//Selection Sort
@@ -41,11 +42,33 @@ public class Numbers {
 		System.out.println("Total Execution Time of " + num.length + " numbers in Insertion Sort take: " + insertionSortExecutionTime + " milli sec");
 
 		//By following above, Continue for rest of the Sorting Algorithm....
+		//Quick sort
+		algo.quickSort(num, 0, 9);
+		long quickSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of " + num.length + " numbers in Quick Sort take: " + quickSortExecutionTime + " milli sec");
 
 
+		//bubble sort
+		algo.bubbleSort(num);
+		long bubbleSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of "+ num.length + " numbers in Bubble Sort take: " + bubbleSortExecutionTime + " milli sec");
 
+		// merge sort
+		algo.merge(num,0,9);
+		long mergeSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of "+ num.length + " numbers in Merge Sort take: " + mergeSortExecutionTime + " milli sec");
 
-		//Come to conclusion about which Sorting Algo is better in given data set.
+		//heap sort
+		algo.heapSort(num);
+		long heapSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of "+ num.length + " numbers in Heap Sort take: " + heapSortExecutionTime + " milli sec");
+
+		//bucket sort
+		algo.bucketSort(num);
+		long bucketSortExecutionTime = algo.executionTime;
+		System.out.println("Total Execution Time of "+ num.length + " numbers in Bucket Sort take: " + bucketSortExecutionTime + " milli sec");
+
+		//
 
 	}
 
