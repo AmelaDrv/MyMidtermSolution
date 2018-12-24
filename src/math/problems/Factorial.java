@@ -12,5 +12,20 @@ public class Factorial {
          *
          */
 
+        int fact;
+        int number = 5;
+        fact = factorial(number);
+        System.out.println("The factorial of " + number + " is: " + fact);
     }
-}
+        public static int factorial(int n) {
+
+            if (n == 0)
+                return 1;
+            else
+                return (n * factorial(n - 1));
+        }
+
+    }
+
+
+

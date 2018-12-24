@@ -1,8 +1,15 @@
 package math.problems;
 
+import org.testng.Assert;
+
 public class UnitTestingMath {
     public static void main(String[] args) {
-        //Apply Unit testing into each classes and methods in this package.
+        int result = 128;
+        int a = Factorial.factorial(5);
+        try {
+            Assert.assertEquals(result, a, "Factorial Passed");
+        } catch (AssertionError e) {
+            e.getMessage();
+        }
+    }}
 
-    }
-}
