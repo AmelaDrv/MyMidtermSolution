@@ -21,6 +21,11 @@ public class EmployeeInfo {
 	 * declare few static and final fields and some non-static fields
 	 */
 	static String companyName;
+	private int employeeId;
+	private String employeeName, department;
+	private static double salary;
+	private int performance;
+
 	
 	/*
 	 * You must implement the logic for below 2 methods and 
@@ -33,10 +38,12 @@ public class EmployeeInfo {
 	 * Must implement below constructor.
 	 */
 	public EmployeeInfo(int employeeId){
+		this.employeeId = employeeId;
 		
 	}
     public EmployeeInfo(String name, int employeeId){
-		
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
 	}
 	
 	/*
@@ -47,9 +54,34 @@ public class EmployeeInfo {
 	 * So you probably need to send 2 arguments.
 	 * 
 	 */
-	public static int calculateEmployeeBonus(int numberOfYearsWithCompany){
-		int total=0;
+	public EmployeeInfo(int employeeId, String employeeName, int employeeAge, String department, int salary, int performance)
+	{
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.department = department;
+		this.salary = salary;
+		this.performance = performance;
+
+	}
+	public static double calculateEmployeeBonus(int performance, int salary){
+		double total=0;
+		if(performance == 10){
+			total = salary *.10;
+		}else if(performance == 5){
+			total = salary * .05;
+		}else if(performance == 3) {
+			total = salary * .03;
+		}else if(performance == 2) {
+			total = salary * .02;
+		}else if(performance == 1) {
+			total = salary * .01;
+		}else if(performance == 0){
+			total = 0;
+		}
+
+		System.out.println("Total employee bonus: " + total + " dollars");
 		return total;
+
 	}
 	
 	/*
@@ -58,8 +90,8 @@ public class EmployeeInfo {
 	 * Hints: pension will be 5% of the salary for 1 year, 10% for 2 years with the company and so on.
 	 * 
 	 */
-	public static int calculateEmployeePension(){
-		int total=0;
+	public static double calculateEmployeePension(){
+		double total=0;
 		Scanner sc  = new Scanner(System.in);
 		System.out.println("Please enter start date in format (example: May,2015): ");
 		String joiningDate = sc.nextLine();
@@ -70,6 +102,28 @@ public class EmployeeInfo {
 
         //implement numbers of year from above two dates
 		//Calculate pension
+
+		String startYear = convertedJoiningDate.substring(convertedJoiningDate.length()-1, convertedJoiningDate.length());
+		String currentYear = convertedTodaysDate.substring(convertedTodaysDate.length()-1, convertedJoiningDate.length());
+		int start = Integer.parseInt(startYear);
+		int current = Integer.parseInt(currentYear);
+
+		int numOfYears = current - start;
+
+		if(numOfYears >= 5){
+			total = salary * .25;
+		}else if(numOfYears == 4){
+			total = salary * .20;
+		}else if(numOfYears == 3) {
+			total = salary * .15;
+		}else if(numOfYears == 2) {
+			total = salary * .10;
+		}else if(numOfYears == 1) {
+			total = salary * .05;}
+		else if(numOfYears == 0){
+				total = 0;
+			}
+
 
 		return total;
 	}

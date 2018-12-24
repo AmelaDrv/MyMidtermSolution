@@ -19,7 +19,7 @@ public static void main(String[] args) {
         map.put(6, "Seattle");
 
 
-
+        System.out.println(" Collection view is: " + map.values());
     }
 
 }
