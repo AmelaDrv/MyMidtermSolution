@@ -38,6 +38,7 @@ public class XmlReader {
 				Node cNode = childNodes.item(j);
 				if(cNode instanceof Element){
 					String content = cNode.getLastChild().getTextContent().trim();
+					System.out.println("Content: "+content);
 					String data = cNode.getNodeName();
 					switch(data){
 					case "firstName":
@@ -47,7 +48,8 @@ public class XmlReader {
 						student.lastName = content;
 						break;
 					case "score":
-						student.score = convertIntToChar(content);  
+						student.score = convertIntToChar(content);
+
 						break;	
 					}
 				}
@@ -60,11 +62,17 @@ public class XmlReader {
   }
 	
 	//This convert method need to be implemented.
-	public String convertIntToChar(String score){
-		String grade = "";
-		
-		
-		return grade;	
+	public static String convertIntToChar(String score){
+		String grade = " ";
+		if(Integer.parseInt(score) >= 90){
+			grade = "A";
+		}else if(Integer.parseInt(score) >= 80){
+			grade = "B";
+		}else if(Integer.parseInt(score) >= 70){
+			grade = "C";
+		}else{
+			grade = "F";
+		}
+		return grade;
 	}
-	
 }
